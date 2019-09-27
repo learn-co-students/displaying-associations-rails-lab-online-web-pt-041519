@@ -1,0 +1,13 @@
+<h1>Songs</h1>
+
+<ul>
+  <% @songs.map do |s| %>
+    <li> <% if s.artist == nil%>
+        <%=link_to s.title, song_path(s) %>
+        <%else%>
+          <%= link_to s.format, song_path(s) %>
+          <%end%>
+        
+        </li>
+  <% end %>
+</ul>
