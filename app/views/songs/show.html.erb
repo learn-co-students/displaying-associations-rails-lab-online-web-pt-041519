@@ -1,0 +1,10 @@
+<h1><%=@song.title %></h1>
+
+<h3><%= link_to @song.artist_name, artist_path(@song.artist) if @song.artist %> - <%=link_to @song.title, song_path(@song) %>
+
+
+</h3>
+
+<!-- Add code here to link to the post's category. -->
+
+
